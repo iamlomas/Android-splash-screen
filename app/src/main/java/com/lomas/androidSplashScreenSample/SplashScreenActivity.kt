@@ -35,7 +35,7 @@ class SplashScreenActivity : AppCompatActivity() {
             tvBelowLogoText!!.textAlignment = TEXT_ALIGNMENT_CENTER
         }
 
-        // create the view
+        // finally create the view
         setContentView(config.create())
     }
 }
