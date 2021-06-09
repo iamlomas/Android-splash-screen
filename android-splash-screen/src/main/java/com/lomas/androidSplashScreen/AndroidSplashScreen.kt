@@ -56,6 +56,7 @@ class AndroidSplashScreen(var mActivity: Activity) {
         return this
     }
 
+    /** Provide android bundle to target activity */
     fun withBundleExtras(bundle: Bundle?): AndroidSplashScreen {
         this.bundle = bundle
         return this
@@ -81,7 +82,6 @@ class AndroidSplashScreen(var mActivity: Activity) {
 
     /**
      * Sets a drawable as the logo.
-     *
      * @param logo the resource identifier of the drawable */
     fun withLogo(@DrawableRes logo: Int): AndroidSplashScreen {
         ivLogo = mView.findViewById<View>(R.id.ivLogo) as ImageView
@@ -89,39 +89,35 @@ class AndroidSplashScreen(var mActivity: Activity) {
         return this
     }
 
-    /**
-     * @param text text to be displayed */
+    /** @param text text to be displayed in the header */
     fun withHeaderText(text: String?): AndroidSplashScreen {
         tvHeader = mView.findViewById<View>(R.id.tvHeader) as TextView
         tvHeader!!.text = text
         return this
     }
 
-    /**
-     * @param text text to be displayed */
+    /** @param text text to be displayed in the footer */
     fun withFooterText(text: String?): AndroidSplashScreen {
         tvFooter = mView.findViewById<View>(R.id.tvFooter) as TextView
         tvFooter!!.text = text
         return this
     }
 
-    /**
-     * @param text text to be displayed */
+    /** @param text text to be displayed just above the logo */
     fun withAboveLogoText(text: String?): AndroidSplashScreen {
         tvAboveLogoText = mView.findViewById<View>(R.id.tvAboveLogoText) as TextView
         tvAboveLogoText!!.text = text
         return this
     }
 
-    /**
-     * @param text text to be displayed */
+    /** @param text text to be displayed just below the logo */
     fun withBelowLogoText(text: String?): AndroidSplashScreen {
         tvBelowLogoText = mView.findViewById<View>(R.id.tvBelowLogoText) as TextView
         tvBelowLogoText!!.text = text
         return this
     }
 
-    /** Creates the specified splash screen. */
+    /** Creates the specified splash screen */
     fun create(): View {
         setUpHandler()
         return mView
