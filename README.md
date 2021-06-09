@@ -9,7 +9,79 @@ Create cool and customizable splash screen for your android apps with minimal ef
 ## SetUp
 
 ### Installation
+This library is available on Jitpack.
 
+* Steps for Gradle:
+
+Step1:
+In your build file add the JitPack repository.
+Add it in your root build.gradle at the end of repositories:
+```kotlin
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ ```
+Step 2:
+Add the dependency
+```kotlin
+	dependencies {
+	        implementation 'com.github.iamlomas:Android-splash-screen:v1.0'
+	}
+```
+
+* Steps for maven:
+
+Step 1:
+Add the JitPack repository to your build file
+```maven
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+ ```
+Step 2:
+Add the dependency
+```maven
+	<dependency>
+	    <groupId>com.github.iamlomas</groupId>
+	    <artifactId>Android-splash-screen</artifactId>
+	    <version>v1.0</version>
+	</dependency>
+ ```
+
+* Steps for sbt:
+
+Step 1:
+Add the JitPack repository to your build file
+Add it in your build.sbt at the end of resolvers:
+```sbt
+    resolvers += "jitpack" at "https://jitpack.io"
+```
+Step 2:
+Add the dependency
+```sbt
+	libraryDependencies += "com.github.iamlomas" % "Android-splash-screen" % "v1.0"
+ ```
+
+* Steps for leiningen:
+
+Step 1:
+Add the JitPack repository to your build file
+Add it in your project.clj at the end of repositories:
+ ```leiningen
+    :repositories [["jitpack" "https://jitpack.io"]]
+```
+
+Step 2:
+Add the dependency
+```leiningen
+	:dependencies [[com.github.iamlomas/Android-splash-screen "v1.0"]]	
+```
 
 ### Available functions
 
