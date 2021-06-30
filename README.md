@@ -133,15 +133,15 @@ create()
 
 ```kotlin
  val config: AndroidSplashScreen = AndroidSplashScreen(this).apply {
-    this.withFullScreen()
-        .withTargetActivity(MainActivity::class.java)
-        .withSplashTimeOut(4000)
-        .withBackgroundResource(R.drawable.stars_in_the_sky)
-        .withHeaderText("It's Header")
-        .withFooterText("It's Footer")
-        .withAboveLogoText("It's above logo text")
-        .withLogo(R.drawable.logo_white)
-        .withBelowLogoText(
+    	withFullScreen()
+        withTargetActivity(MainActivity::class.java)
+        withSplashTimeOut(4000)
+        withBackgroundResource(R.drawable.stars_in_the_sky)
+        withHeaderText("It's Header")
+        withFooterText("It's Footer")
+        withAboveLogoText("It's above logo text")
+        withLogo(R.drawable.logo_white)
+        withBelowLogoText(
             "It's below logo text\n\"Photo by Juskteez Vu on Unsplash\""
         )
 }
